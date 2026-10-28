@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Tripura Jewels, a considered collection of handcrafted jewelry inspired by the quiet beauty of nature."
+    />
+    <meta name="theme-color" content="#f7f5f0" />
+    <title>Tripura Jewels — Jewelry, considered</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Tripura Jewels home">
+        <img src="assets/tripura-jewels-logo-clear.png" alt="Tripura Jewels" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#collection">Collection</a>
+        <a href="#bangle-projects">Bangle projects</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">Journal</a>
+        <a href="#contact">Get in touch</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=2200&q=85"
+          alt="Sculptural gold jewelry arranged in warm natural light"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Jewelry, considered</p>
+          <h1><span class="hero-title-main">Made to be</span><em class="hero-title-accent">held close.</em></h1>
+          <p class="hero-copy">
+            A study in shape, feeling, and the beauty of things made slowly.
+          </p>
+          <a class="button button-light" href="#collection">Explore the collection <span>↘</span></a>
+        </div>
+        <span class="hero-caption">Objects for a life well lived · Est. 2018</span>
+        <div class="hero-slider-controls" aria-label="Hero slideshow controls">
+          <button class="hero-arrow" type="button" data-slide-direction="-1" aria-label="Previous slide">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <span class="hero-slide-count" aria-live="polite"><span class="hero-slide-current">01</span> <span aria-hidden="true">/</span> <span class="hero-slide-total">03</span></span>
+          <button class="hero-arrow" type="button" data-slide-direction="1" aria-label="Next slide">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="intro section-wrap">
+        <p class="eyebrow">A quieter kind of adornment</p>
+        <h2>For the everyday<br />and the <em>everything.</em></h2>
+        <p class="intro-copy">
+          Thoughtful forms, lasting materials, and a little room for wonder.
+          Discover the pieces that make our world.
+        </p>
+      </section>
+
+      <div class="brand-notes" aria-label="Our values">
+        <span>Made with intention</span><i aria-hidden="true">✳</i>
+        <span>Inspired by nature</span><i aria-hidden="true">✳</i>
+        <span>Created to be treasured</span>
+      </div>
+
+      <section class="curated-collections section-wrap" aria-label="Curated jewelry collections">
+        <div class="curated-header">
+          <p class="eyebrow">Curated by occasion</p>
+          <h2>Jewellery for<br /><em>every ritual.</em></h2>
+        </div>
+
+        <div class="curated-grid">
+          <article class="curated-card">
+            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=85" alt="Everyday gold rings" loading="lazy" />
+            <div class="curated-card-copy">
+              <span>Everyday gold</span>
+              <h3>Soft, sculptural forms</h3>
+            </div>
+          </article>
+
+          <article class="curated-card">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85" alt="Statement earrings" loading="lazy" />
+            <div class="curated-card-copy">
+              <span>Statement pieces</span>
+              <h3>Light-catching silhouettes</h3>
+            </div>
+          </article>
+
+          <article class="curated-card">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85" alt="Fine necklaces and pendants" loading="lazy" />
+            <div class="curated-card-copy">
+              <span>Layered layers</span>
+              <h3>Fine necklaces and pendants</h3>
+            </div>
+          </article>
+
+          <article class="curated-card">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85" alt="Heirloom gifts and bridal pieces" loading="lazy" />
+            <div class="curated-card-copy">
+              <span>Gift & heirlooms</span>
+              <h3>Pieces to hold for years</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="collection section-wrap" id="collection">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Pieces with <em>presence.</em></h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter jewelry by type">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All pieces</button>
+            <button class="filter-button" type="button" data-filter="rings" aria-pressed="false">Rings</button>
+            <button class="filter-button" type="button" data-filter="earrings" aria-pressed="false">Earrings</button>
+            <button class="filter-button" type="button" data-filter="necklaces" aria-pressed="false">Necklaces</button>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article class="piece-card" data-category="rings">
+            <button class="piece-image" type="button" aria-label="View Solstice ring photograph" data-label="RING">
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85" alt="Gold ring with a softly sculpted setting" loading="lazy" />
+              <span class="image-mark">View photograph ↗</span>
+            </button>
+            <div class="piece-details"><div><h3>Solstice ring</h3><p>Recycled gold · Hand-finished</p></div><span class="piece-number">01</span></div>
+          </article>
+          <article class="piece-card" data-category="earrings">
+            <button class="piece-image" type="button" aria-label="View Tidal earrings photograph" data-label="EARRINGS">
+              <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=85" alt="Organic gold earrings with a fluid silhouette" loading="lazy" />
+              <span class="image-mark">View photograph ↗</span>
+            </button>
+            <div class="piece-details"><div><h3>Tidal earrings</h3><p>Recycled gold · Sculptural form</p></div><span class="piece-number">02</span></div>
+          </article>
+          <article class="piece-card" data-category="necklaces">
+            <button class="piece-image" type="button" aria-label="View Form necklace photograph" data-label="NECKLACE">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85" alt="Delicate gold necklace with a minimal pendant" loading="lazy" />
+              <span class="image-mark">View photograph ↗</span>
+            </button>
+            <div class="piece-details"><div><h3>Form necklace</h3><p>Recycled gold · Quiet geometry</p></div><span class="piece-number">03</span></div>
+          </article>
+          <article class="piece-card" data-category="rings">
+            <button class="piece-image" type="button" aria-label="View Pebble ring photograph" data-label="RING">
+              <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=85" alt="A smooth gold ring photographed against a neutral backdrop" loading="lazy" />
+              <span class="image-mark">View photograph ↗</span>
+            </button>
+            <div class="piece-details"><div><h3>Pebble ring</h3><p>Recycled gold · Organic lines</p></div><span class="piece-number">04</span></div>
+          </article>
+          <article class="piece-card" data-category="earrings">
+            <button class="piece-image" type="button" aria-label="View Lumen earrings photograph" data-label="EARRINGS">
+              <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85" alt="Gold hoop earrings in soft, natural light" loading="lazy" />
+              <span class="image-mark">View photograph ↗</span>
+            </button>
+            <div class="piece-details"><div><h3>Lumen hoops</h3><p>Recycled gold · A modern classic</p></div><span class="piece-number">05</span></div>
+          </article>
+          <article class="piece-card" data-category="necklaces">
+            <button class="piece-image" type="button" aria-label="View Keepsake necklace photograph" data-label="NECKLACE">
+              <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85" alt="A fine gold necklace with a considered pendant detail" loading="lazy" />
+              <span class="image-mark">View photograph ↗</span>
+            </button>
+            <div class="piece-details"><div><h3>Keepsake chain</h3><p>Recycled gold · Made for layering</p></div><span class="piece-number">06</span></div>
+          </article>
+        </div>
+        <p class="collection-note">An evolving catalog of forms, made with care.</p>
+      </section>
+
+      <section class="bangle-projects" id="bangle-projects">
+        <div class="bangle-projects-intro section-wrap">
+          <p class="eyebrow">From your catalog</p>
+          <h2>Bangle projects,<br /><em>kept together.</em></h2>
+          <p class="intro-copy">
+            Browse the photographs in the four groups from your catalog. Each
+            project keeps its own images together, with no prices or checkout.
+          </p>
+        </div>
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=85" alt="A close detail of a handcrafted ring" loading="lazy" />
+          <span class="photo-caption">Small details. Lasting meaning.</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">A little about us</p>
+          <h2>Made slowly.<br /><em>Worn forever.</em></h2>
+          <p>
+            Tripura Jewels began with a simple thought: the things we keep closest
+            should be made with care. We work in small forms and honest
+            materials, taking inspiration from the natural world and the
+            beautifully imperfect.
+          </p>
+          <a class="text-link" href="#journal">A note from our studio <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="journal section-wrap" id="journal">
+        <div class="journal-heading">
+          <div><p class="eyebrow">Notes from the studio</p><h2>Collected <em>moments.</em></h2></div>
+          <p>Inspiration, process, and the small things worth noticing.</p>
+        </div>
+        <div class="journal-grid">
+          <article class="journal-card">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=85" alt="A calm, sunlit studio interior" loading="lazy" />
+            <p class="eyebrow">Inside the studio · 04 min read</p>
+            <h3>The beauty of making by hand</h3>
+          </article>
+          <article class="journal-card">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85" alt="Early morning light across a quiet landscape" loading="lazy" />
+            <p class="eyebrow">Inspiration · 03 min read</p>
+            <h3>Finding form in the natural world</h3>
+          </article>
+          <article class="journal-card">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85" alt="A quiet moment with a book in soft light" loading="lazy" />
+            <p class="eyebrow">A slower life · 02 min read</p>
+            <h3>On keeping only what matters</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">A note, a thought, a hello</p>
+        <h2>We'd love to<br /><em>hear from you.</em></h2>
+        <a class="button button-dark" href="mailto:hello@tripurajewels.com">Write to the studio <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#home" aria-label="Tripura Jewels home">
+        <img src="assets/tripura-jewels-logo-clear.png" alt="Tripura Jewels" />
+      </a>
+      <p>Objects for a life well lived.</p>
+      <a href="#home">Back to top ↑</a>
+      <small>© <span id="year"></span> Tripura Jewels</small>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Jewelry photograph">
+      <button class="lightbox-close" type="button" aria-label="Close photograph">×</button>
+      <img src="" alt="" />
+    </dialog>
+  </body>
+</html>
