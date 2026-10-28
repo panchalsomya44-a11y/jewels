@@ -97,14 +97,14 @@ const projectBatches = [
     alt: "Gold bangle in a styled product photograph",
   },
   {
-    title: "Side Views",
-    description: "Individual bangle profiles and close-up product views.",
+    title: "Men's Kada",
+    description: "Side profiles and close-up catalog photographs of men's kada designs.",
     folder: "side-views",
     prefix: "side-view",
     count: 40,
     projectNumber: "02",
-    itemLabel: "Side view",
-    alt: "Gold bangle shown from the side",
+    itemLabel: "Men's kada photo",
+    alt: "Men's gold kada shown from the side",
   },
   {
     title: "Handheld",
