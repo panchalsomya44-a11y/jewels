@@ -888,7 +888,7 @@ h2 {
 
 .site-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr auto;
   align-items: center;
   gap: 20px;
   padding: 32px var(--page-gutter);
@@ -907,6 +907,24 @@ h2 {
   margin: 0;
   color: var(--muted);
   font-size: 10px;
+}
+
+.footer-contact {
+  display: grid;
+  gap: 5px;
+  justify-self: center;
+}
+
+.footer-contact span {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-contact a {
+  font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .site-footer > a:not(.wordmark) {
@@ -1386,6 +1404,18 @@ h2 {
 
   .site-footer p {
     display: none;
+  }
+
+  .footer-contact {
+    grid-column: 1 / -1;
+    justify-self: start;
+    gap: 6px;
+  }
+
+  .footer-contact a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
 
   .site-footer > a:not(.wordmark) {
