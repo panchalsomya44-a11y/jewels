@@ -1015,7 +1015,10 @@ h2 {
   }
 
   .wordmark img {
-    width: clamp(138px, 43vw, 185px);
+    width: auto;
+    height: 72px;
+    max-width: min(185px, 45vw);
+    object-fit: contain;
   }
 
   .menu-toggle {
@@ -1414,7 +1417,7 @@ h2 {
   }
 
   .wordmark img {
-    width: 145px;
+    height: 66px;
   }
 
   .menu-toggle {
